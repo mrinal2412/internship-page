@@ -55,7 +55,7 @@ function PassCheck(e){
    <label>
       <h3 className='fonts'>Name</h3>
    </label>
-   <br/>
+   
    <input 
     className={nameError? 'invalidName': 'validName'}
     type="text"
@@ -70,9 +70,11 @@ function PassCheck(e){
         </div>
         <br/>
         <div className='email'>
+        
    <label>
-   <h2 className='fonts'> Email Address</h2> 
+   <h3 className='fonts'> Email Address</h3> 
    </label>
+   
    <input 
     className={emailError? 'invalidMail':'validMail'}
     
@@ -87,11 +89,13 @@ function PassCheck(e){
         }}>{emailError? 'Invalid Mail Format':'' }</span>
         </div>
    <br/>
+   <br/>
    <div className='pass'>
    <label>
    
    <h2 className='fonts'> Password</h2>
    </label>
+   
    <input 
     className={passError?'invalidPass': 'validPass'}
     type="password"
